@@ -16,12 +16,17 @@ var rollAnimations = function () {
   }, 1.5);
 };
 
+
 $(document).ready(function() {
   // $(".potato").on("click", rollAnimations);
   console.log( dist );
   rollAnimations();
 
-  // $(".project-one").hover( function () {
-  //   $(this).append( $("<img src='assets/project-1.jpg'>"));
-  // });
+  $("h1").hover(function () {
+    var $sam = $(".sam");
+    $sam.html("SAM KI");
+  }, function() {
+    var $sam = $(".sam");
+    $sam.html("SAMANTHA KI");
+  });
 });
