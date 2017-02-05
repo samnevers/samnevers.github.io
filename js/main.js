@@ -1,8 +1,8 @@
-console.log("Yo");
-console.log(innerWidth);
+
 var dist = window.innerWidth;
 dist += "px";
-// var potatoAnimation = null;
+
+// Potato Animation
 var rollAnimations = function () {
   var $potato = $(".potato");
   TweenMax.to($potato, 5, {
@@ -18,10 +18,10 @@ var rollAnimations = function () {
 
 
 $(document).ready(function() {
-  // $(".potato").on("click", rollAnimations);
-  console.log( dist );
+
   rollAnimations();
 
+  // Name changing
   $("h1").hover(function () {
     var $sam = $(".sam");
     $sam.html("SAM KI");
