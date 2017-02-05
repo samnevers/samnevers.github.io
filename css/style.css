@@ -10,177 +10,220 @@ body {
   overflow: scroll;
 }
 
-.custom {
-  cursor: url( 'assets/potato-cursor.png');
-  /*cursor: crosshair;*/
-}
+/*FONTS*/
 
-h1 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 2.6em;
-}
-
-span.h1 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.02em;
-  color: #6fccdd;
-}
-
-h4 {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.2em;
-}
-
-h4 a {
-  color: #6fccdd;
-}
-
-@media (max-width: 549px) {
-  h1 { font-size: 2em; }
-  h4 { font-size: 1em; }
-}
-
-p {
-  font-family: 'Lato', sans-serif;
-}
-
-.labelled {
-  font-family: "Courier New", sans-serif;
-  color: white;
-  letter-spacing: 0.1em;
-  margin-bottom: 0.3rem;
-}
-
-/*.labelled span {
-  background-color: #000;
-}*/
-
-span.labelled {
-  background-color: black;
-  text-decoration: none;
-}
-
-h4 a {
-  text-decoration: none;
-}
-
-span.resume {
-  color: #6fccdd;
-  font-family: "Courier New", sans-serif;
-  background-color: black;
-  letter-spacing: 0.1em;
-  font-size: 1.3em;
-}
-
-nav {
-  text-align: center;
-  line-height: 0.8em;
-  color: #FFF;
-  background-color: rgba(0, 0, 0, 1);
-}
-
-div.menu {
-  background-color: #000;
-  margin: 0 auto;
-  text-transform: uppercase;
-  color: #FFF;
-  display: inline-block;
-  padding: 1.5vh 3vw;
-  font-size: 1em;
-}
-
-div.menu a {
-  color: #FFF;
-  text-decoration: none;
-}
-
-div.menu a:hover {
-  color: #6fccdd;
-}
-
-#ocean-header {
-  width: 100vw;
-  /*height: 100vh;*/
-  margin: 0;
-}
-
-/*#ocean-header.resume-bg {
-  background-image: url("../assets/french-fries.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  z-index: 1000;
-}*/
-
-.welcome-text {
-  margin: 25vh auto 15vh auto;
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  vertical-align: center;
-  max-width: 65vw;
-  max-height: 40vh;
-  padding: 20px;
-  border: #6fccda 20px solid;
-}
-
-.fries-box {
-  max-width: 80vw;
-  height: 85vh;
-  background-image: url("../assets/french-fries.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  /*background-size: 100% 100%;*/
-  margin: 5vh auto 10vh auto;
-  border: none;
-  background-color: rgba(255, 255, 255, 0);
-  /*padding: 15vh 10vw;*/
-}
-
-.fries-text {
-  position: relative;
-  top: 40vh;
-  left: 13vw;
-  max-width: 65%;
-  max-height: 60%;
-  text-align: center;
-}
-
-.welcome-text.about {
-  margin: 15vh auto;
-  max-height: 65vh;
-}
-
-.welcome-text.projects {
-  margin: 5vh auto;
-  border: #6fccda 20px solid;
-}
-
-@media (max-width: 549px) {
-  .welcome-text {
-    height: 65vh;
-    margin: 10vh auto;
-   }
-}
-
-.project-one, .project-two, .project-three, .project-four {
-  border: #6fccda 5px solid;
-  background-color: #000;
-  height: 20vh;
-  margin: 2vh;
-}
-
-.icon {
-  height: 8vh;
-  width: 8vw;
-}
-
-@media (max-width: 549px) {
-  .sm-hide {
-    display: none;
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.6em;
   }
-}
 
-@media (min-width: 550px) {
-  .lg-hide {}
-}
+  span.h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.02em;
+    color: #6fccdd;
+  }
+
+  h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+  }
+
+  h4 a {
+    color: #6fccdd;
+  }
+
+  h5 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+  }
+
+  @media (max-width: 549px) {
+    h1 { font-size: 2em; }
+    h4 { font-size: 1em; }
+    h5 { font-size: 1em; }
+  }
+
+  p {
+    font-family: 'Lato', sans-serif;
+  }
+
+  /*FAUX LABEL TEXT*/
+
+    .labelled {
+      font-family: "Courier New", sans-serif;
+      color: white;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.3rem;
+    }
+
+    h5.labelled {
+      letter-spacing: -1em;
+      margin-bottom: 1.8rem;
+      text-align: center;
+    }
+
+    span.labelled {
+      background-color: black;
+      text-decoration: none;
+    }
+
+    h4 a {
+      text-decoration: none;
+    }
+
+    /*RESUME PAGE SPECIFIC*/
+
+      span.resume {
+        color: #6fccdd;
+        font-family: "Courier New", sans-serif;
+        background-color: black;
+        letter-spacing: 0.1em;
+        font-size: 1.3em;
+      }
+
+    /*---END RESUME FONT ---*/
+
+  /*-----END FAUX LABEL-----*/
+
+/*--------- END FONTS --------*/
+
+
+/*NAV BAR*/
+
+  nav {
+    text-align: center;
+    line-height: 0.8em;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+  div.menu {
+    background-color: #000;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: #FFF;
+    display: inline-block;
+    padding: 1.5vh 3vw;
+    font-size: 1em;
+  }
+
+  div.menu a {
+    color: #FFF;
+    text-decoration: none;
+  }
+
+  div.menu a:hover {
+    color: #6fccdd;
+  }
+
+/*----------------*/
+
+/* GENERIC - ACROSS MULTIPLE PAGES */
+
+  #ocean-header {
+    width: 100vw;
+    /*height: 100vh;*/
+    margin: 0;
+  }
+
+  .welcome-text {
+    margin: 25vh auto 15vh auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    vertical-align: center;
+    max-width: 65vw;
+    max-height: 40vh;
+    padding: 20px;
+    border: #6fccda 20px solid;
+  }
+
+/*----- END GENERIC ------ */
+
+/*RESUME PAGE SPECIFIC*/
+
+  .fries-box {
+    max-width: 80vw;
+    height: 85vh;
+    background-image: url("../assets/french-fries.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /*background-size: 100% 100%;*/
+    margin: 5vh auto 10vh auto;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    /*padding: 15vh 10vw;*/
+  }
+
+  .fries-text {
+    position: relative;
+    top: 40vh;
+    left: 13vw;
+    max-width: 65%;
+    max-height: 60%;
+    text-align: center;
+  }
+
+/*-----END RESUME PAGE-----*/
+
+/*ABOUT PAGE SPECIFIC*/
+
+  .welcome-text.about {
+    margin: 15vh auto;
+    max-height: 65vh;
+  }
+
+/*--- END ABOUT PAGE ---*/
+
+
+/*PROJECT PAGE SPECIFIC*/
+
+  .welcome-text.projects {
+    margin: 5vh auto;
+    border: #6fccda 20px solid;
+  }
+
+  .project-image {
+    border: #6fccda 5px solid;
+    background-color: #000;
+    height: 20vh;
+    margin-bottom: 2vh;
+    /*margin: 2vh;*/
+  }
+
+  .project-description {
+    padding: 0 1vh 2vh 1vh;
+  }
+
+/*--------------*/
+
+/* CONTACT PAGE SPECIFIC */
+
+  .icon {
+    height: 8vh;
+    width: 8vw;
+  }
+
+/*-- END CONTACT PAGE --*/
+
+
+/* ADDITIONAL MEDIA QUERIES */
+
+  @media (max-width: 549px) {
+    .welcome-text {
+      height: 65vh;
+      margin: 10vh auto;
+     }
+  }
+
+  @media (max-width: 549px) {
+    .sm-hide {
+      display: none;
+    }
+  }
+
+  @media (min-width: 550px) {
+    .lg-hide {}
+  }
+
+/*--- END MEDIA QUERIES ---*/
