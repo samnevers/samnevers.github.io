@@ -65,20 +65,32 @@ body {
     span.labelled {
       background-color: black;
       text-decoration: none;
+      margin-bottom: 1.8rem;
     }
 
     h4 a {
       text-decoration: none;
+      color: white;
     }
 
     /*RESUME PAGE SPECIFIC*/
 
-      span.resume {
+      span.resume a {
         color: #6fccdd;
         font-family: "Courier New", sans-serif;
         background-color: black;
         letter-spacing: 0.1em;
         font-size: 1.3em;
+      }
+
+      span.resume a:hover {
+        color: #FFF;
+        letter-spacing: 0.2em;
+        font-size: 1.4em;
+      }
+
+      span.right a, span.left a {
+        color: #fff;
       }
 
     /*---END RESUME FONT ---*/
@@ -165,6 +177,46 @@ body {
   }
 
 /*-----END RESUME PAGE-----*/
+
+/*   RESUME DETAILS PAGE   */
+
+  /*EXPERIENCE SECTION*/
+    .experience, .education, .skills {
+      width: 100vw;
+      height: 100vh;
+      background-color: #FFF;
+    }
+
+    .text {
+      margin: 30px 0;
+      padding: 5vh;
+      border: 20px #6fccda solid;
+      width: 100%;
+      height: auto;
+      color: #000;
+    }
+
+    li {
+      font-family: "Lato", sans-serif;
+    }
+
+    .buttons {
+      margin-top: 10vh;
+    }
+
+    .left {
+      margin-left: -15vw;
+      text-align: left;
+    }
+
+    .right {
+      margin-right: -25vw;
+      text-align: right;
+    }
+  /*END EXPERIENCE*/
+
+/*-- END RESUME DETAILS PAGE-- */
+
 
 /*ABOUT PAGE SPECIFIC*/
 
