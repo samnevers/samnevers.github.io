@@ -1,3 +1,5 @@
+console.log(innerWidth);
+
 
 var dist = window.innerWidth;
 dist += "px";
