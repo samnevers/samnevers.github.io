@@ -1,5 +1,5 @@
-console.log("Psst! Poke the potato!");
-console.log("Like what you see and want to chat? Email me at s.ki@live.com");
+console.log("%c Like what you see and want to chat? Email me at s.ki@live.com ","background-color: black; color: #6fccda; font-family: 'Courier New', font-weight: bold;");
+console.log("%c Psst... poke the potato :) ","background-color:black; color: white; font-family: 'Courier New', font-weight: bold");
 
 var randomNumber = function(min, max) {
     if (max == null) {
@@ -54,9 +54,9 @@ var animateFries = function () {
 $(document).ready(function() {
 
   var divHeight = $("#ocean-header").innerHeight();
-  console.log(divHeight);
+  // console.log(divHeight);
   var navHeight = $("nav").innerHeight();
-  console.log(navHeight);
+  // console.log(navHeight);
   var fryHeight = navHeight + 10;
 
   rollAnimations();
