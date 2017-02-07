@@ -1,6 +1,9 @@
+// Not so secret messages
+console.log("%c Hi there! Thanks for popping by. ","background-color:black; color: white; font-family: 'Courier New', font-weight: bold");
 console.log("%c Like what you see and want to chat? Email me at s.ki@live.com ","background-color: black; color: #6fccda; font-family: 'Courier New', font-weight: bold;");
 console.log("%c Psst... poke the potato :) ","background-color:black; color: white; font-family: 'Courier New', font-weight: bold");
 
+// Random function for rotating fries
 var randomNumber = function(min, max) {
     if (max == null) {
       max = min;
@@ -12,13 +15,6 @@ var randomNumber = function(min, max) {
   var randomX = function () {
     var divWidth = $("#ocean-header").innerWidth();
   return Math.random() * divWidth;
-};
-
-var randomY = function () {
-  var divHeight = $("#ocean-header").innerHeight();
-  var navHeight = $("nav").innerHeight();
-  var fryHeight = divHeight - navHeight;
-  return Math.random() * fryHeight;
 };
 
 var dist = window.innerWidth;
@@ -38,26 +34,20 @@ var rollAnimations = function () {
   }, 1.5);
 };
 
+// It's raining fries animation
 var animateFries = function () {
-  var $fries = $(".fry");
-  TweenMax.to($fries, 2, {
+  TweenMax.staggerTo(".fry", 0.8, {
     rotation: 720,
     ease: Linear.easeNone,
     yPercent: 2000,
     onComplete: function () {
       $fries.remove();
     }
-  });
+  }, 0.1);
 };
 
 
 $(document).ready(function() {
-
-  var divHeight = $("#ocean-header").innerHeight();
-  // console.log(divHeight);
-  var navHeight = $("nav").innerHeight();
-  // console.log(navHeight);
-  var fryHeight = navHeight + 10;
 
   rollAnimations();
 
@@ -70,7 +60,7 @@ $(document).ready(function() {
     $sam.html("SAMANTHA KI");
   });
 
-
+  // Potato easter egg!
   var $potato = $(".potato");
   $potato.on("click", function() {
 
@@ -82,15 +72,15 @@ $(document).ready(function() {
       $fryImg.addClass("fry");
       $fryImg.css({
         left: randomX() + "px",
-        top: fryHeight + "px",
+        top: -10 + "px",
+        zIndex: 200,
+        position: "absolute",
         transform: "rotate("+ randomNumber(0, 360) + "deg)"
       });
-      // console.log(fryHeight);
-      // console.log(randomX());
-      // console.log(randomY());
-      $("nav").prepend($fryImg);
-      animateFries();
+
+      $("body").prepend($fryImg);
     }
+    animateFries();
   });
 
 });
